@@ -5,6 +5,7 @@ import { ScannerService } from './shared/services/scanner.service';
 
 @Component({
   selector: 'app-root',
+  standalone: false,
   template: `
     <ng-container>
       <h1 class="bg-red-500">Hola mundo</h1>
