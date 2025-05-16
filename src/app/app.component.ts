@@ -13,6 +13,8 @@ import { ScannerService } from './shared/services/scanner.service';
         <p>Data del scanner:</p>
         {{$scanner()}}
       </section>
+
+      <button (click)="printTest()">Enviar</button>
       
       
     </ng-container>
@@ -31,9 +33,18 @@ export class AppComponent {
     this._ipcService.on(Channels.RespuestaDelMain, (respuesta) => {
       console.log('Respuesta:', respuesta);
     });
+    
   }
 
-  enviar() {
+   async printTest() {
+    console.log('Verificando impresora...');
+    
+    const connection = await this._ipcService.invoke(Channels.CheckPrinterConnection);
+    const printraw = await this._ipcService.invoke(Channels.PrintRaw, "Hola MUNDO xdd");
+    
+
+
+    console.log(connection);
     
   }
   
