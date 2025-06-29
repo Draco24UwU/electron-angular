@@ -57,6 +57,7 @@ import { UpdatePropertyBuildingDetailsFormComponent } from "./forms/update-prope
 import { UpdatePropertyRentFormComponent } from "./forms/update-property-rent.form.component";
 import { UpdatePropertySaleFormComponent } from "./forms/update-property-sale.form.component";
 import { UpdatePropertyPicturesFormComponent } from "./forms/update-property-pictures.form.component";
+import { AppTableComponent } from "./common/app-table.component";
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { UpdatePropertyPicturesFormComponent } from "./forms/update-property-pic
     FormControlErrorsComponent,
     FormLoadingMessageComponent,
     StatusComponent,
+    AppTableComponent,
     //* --- Dialogs --- *//
     CreateEditUserDialogComponent,
     PropertyDetailsDialogComponent,
@@ -134,6 +136,7 @@ import { UpdatePropertyPicturesFormComponent } from "./forms/update-property-pic
     StatusComponent,
     LoginFormComponent,
     UsersTableComponent,
+    AppTableComponent,
     UsersFiltersFormComponent,
     CreateEditUserDialogComponent,
     CreateUserFormComponent,

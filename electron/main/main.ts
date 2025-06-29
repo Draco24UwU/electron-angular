@@ -29,7 +29,6 @@ import { initializePrinter } from './ipc/printer.handler';
     }
   });
 
-
   app.whenReady().then(() => {
     // * Registrar todos los registerIpcHandlers.
     registerIpcHandlers();
